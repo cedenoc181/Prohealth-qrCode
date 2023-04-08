@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                fontFamily: {
+                   sans: ['Poppins', 'sans-serif'], 
+                },
+            },
+          },
+        };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" 
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <title>ProHealth PT OT QRcode Reader</title>
+</head>
+<body>
+
+    <header class="bg-teal-500 p-4 mb-10 ">
+        <div class="max-w-5xl m-auto"></div>
+        <div class="text-xl font-bold text-white flex flex-row-start">
+            <img src="/img/prohealth-logo-removebg-preview.png" alt ="logo"/>
+        </div>
+        <div class="flex justify-around mt-5">
+            <nav id="eastside" class="text-white text-decoration: underline font-bold">
+                Eastside 
+            </nav>
+
+            <nav id="w150" class="text-white text-decoration: underline font-bold">
+                Westside-150 
+            </nav>
+
+            <nav id="w180" class="text-white text-decoration: underline font-bold">
+                Westside-180  
+            </nav>
+
+            <nav id="inwood" class="text-white text-decoration: underline font-bold">
+                Inwood  
+            </nav>
+
+        </div>
+    </header>
+
+        <main>
+            <div class="max-w-5xl m-auto flex flex-col text-center align-center justify-center">
+                <p class="font-bold">Eastside</p>
+                <p>Thank you for taking the time to write us a review! 
+                    We work hard to provide the best quality care for our patients and wish to continue doing so. 
+                    Please let us know how we did?</p>
+                    <ul>
+                        <li>How was your treatment at Pro Health physical therapy  </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                <div id="qrcode" class="m-auto"></div>
+
+                <p class="mt-5 font-bold">Westside 150</p>
+                <p>Thank you for taking the time to write us a review!
+                     We work hard to provide the best quality care for our patients and wish to continue doing so.
+                      Please let us know how we did?</p>
+
+                <div id="qrcode2" class="m-auto"></div>
+
+                <p class="mt-5 font-bold">Westside 180</p>
+                <p>Thank you for taking the time to write us a review!
+                     We work hard to provide the best quality care for our patients and wish to continue doing so.
+                      Please let us know how we did?</p>
+
+                <div id="qrcode3" class="m-auto"></div>
+
+                <p class="mt-5 font-bold">Inwood</p>
+                <p>Thank you for taking the time to write us a review! 
+                    We work hard to provide the best quality care for our patients and wish to continue doing so. 
+                    Please let us know how we did?</p>
+
+                <div id="qrcode4" class="m-auto"></div>
+            </div>
+        </main>
+
+</body>
+</html>
