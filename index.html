@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -31,7 +30,7 @@
         <div class="text-xl font-bold text-white flex flex-row-start">
             <img src="/img/prohealth-logo-removebg-preview.png" alt ="logo"/>
         </div>
-        <div class="flex justify-around mt-5">
+        <div class="flex justify-around mt-5 cursor-pointer">
             <nav id="eastside" class="text-white text-decoration: underline font-bold">
                 Eastside 
             </nav>
@@ -53,60 +52,21 @@
 
         <main>
             <div class="max-w-5xl m-auto flex flex-col text-center align-center justify-center">
-                
-             <div class="east">
-                <p class="font-bold text-decoration: underline">Eastside</p>
-                <p>Thank you for taking the time to write us a review, 
+
+             <div class="clinic">
+                <p id="location" class="font-bold text-decoration: underline"></p>
+                <p id="prompt">Thank you for taking the time to write us a review, 
                     We work hard to provide the best quality care for our patients and wish to continue doing so. 
                     Please let us know how we did!</p>
-                    <ul class="font-bold mt-4">
+                    <ul id="questions" class="font-bold mt-4">
                         <li>How has your experience with us been?</li>
                         <li>Have you seen any noticable difference?</li>
                         <li>It would be extremely helpful to name your Physical therapist in your feedback</li>
                     </ul>
-                <div id="qrcode" class="m-auto"></div>
+                <div id="qrcode" class="m-auto mt-5"></div>
              </div>
-
-             <div class="w150">
-                <p class="mt-5 font-bold text-decoration: underline">Westside 150</p>
-                <p>Thank you for taking the time to write us a review!
-                     We work hard to provide the best quality care for our patients and wish to continue doing so.
-                      Please let us know how we did?</p>
-                      <ul class="font-bold mt-4">
-                        <li>How has your experience with us been?</li>
-                        <li>Have you seen any noticable difference?</li>
-                        <li>It would be extremely helpful to name your Physical therapist in your feedback</li>
-                    </ul>
-                <div id="qrcode2" class="m-auto"></div>
-            </div>
-
-            <div class="w180">
-                <p class="mt-5 font-bold text-decoration: underline">Westside 180</p>
-                <p>Thank you for taking the time to write us a review!
-                     We work hard to provide the best quality care for our patients and wish to continue doing so.
-                      Please let us know how we did?</p>
-                      <ul class="font-bold mt-4">
-                        <li>How has your experience with us been?</li>
-                        <li>Have you seen any noticable difference?</li>
-                        <li>It would be extremely helpful to name your Physical therapist in your feedback</li>
-                    </ul>
-                <div id="qrcode3" class="m-auto"></div>
-            </div>
-
-            <div class="inwood">
-                <p class="mt-5 font-bold text-decoration: underline">Inwood</p>
-                <p>Thank you for taking the time to write us a review! 
-                    We work hard to provide the best quality care for our patients and wish to continue doing so. 
-                    Please let us know how we did?</p>
-                    <ul class="font-bold mt-4">
-                        <li>How has your experience with us been?</li>
-                        <li>Have you seen any noticable difference?</li>
-                        <li>It would be extremely helpful to name your Physical therapist in your feedback</li>
-                    </ul>
-                <div id="qrcode4" class="m-auto"></div>
-            </div>
             </div>
         </main>
-
+        <script src="script.js"></script>
 </body>
 </html>
