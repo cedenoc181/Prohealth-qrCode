@@ -1,28 +1,51 @@
 // this is the nav bar elements
-const eastSide = document.getElementById('eastside');
-const westSide150 = document.getElementById('w150');
-const westSide180 = document.getElementById('w180');
-const inwood = document.getElementById('inwood');
-
-const clinic = [eastSide, westSide150, westSide180, inwood];
-
+let eastSide = document.getElementById('eastside');
+let westSide150 = document.getElementById('w150');
+let westSide180 = document.getElementById('w180');
+let inwood = document.getElementById('inwood');
 
 const onClick = () => {
-    console.log("this clinic nav was click")
+    let qrDisplay = document.getElementById('qrcode');
+    qrDisplay.innerHTML = "";
+    let east = "https://www.google.com/search?q=prohealth+pt+ot&oq=pro&aqs=chrome.2.69i60j69i57j69i59l2j69i65j69i60j69i65j69i60.3356j0j7&sourceid=chrome&ie=UTF-8";
+    qrDisplay = generateQRCode(east);
  }
 
-eastSide.addEventListener('click', onClick);
+ const onClick1 = () => {
+    let qrDisplay = document.getElementById('qrcode');
+    qrDisplay.innerHTML = "";
+    let w150 = "https://www.google.com/search?q=pro+health+and+fitness+west+150&ei=5Ms0ZOHZJ82t5NoPwLyawAU&ved=0ahUKEwjh26bh6aD-AhXNFlkFHUCeBlgQ4dUDCBA&uact=5&oq=pro+health+and+fitness+west+150&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQogQyBQgAEKIEMgUIABCiBDoKCAAQRxDWBBCwA0oECEEYAFDmA1jqCGCMCmgBcAF4AIABWYgBngGSAQEymAEAoAEByAEIwAEB&sclient=gws-wiz-serp";
+    qrDisplay = generateQRCode(w150);
+ }
 
 
+const onClick2 = () => {
+    let qrDisplay = document.getElementById('qrcode');
+    qrDisplay.innerHTML = "";
+    let w180 = "https://www.google.com/search?q=pro+health+and+fitness+west+180&source=hp&ei=1ss0ZPuDFIzj5NoP-piX8AQ&iflsig=AOEireoAAAAAZDTZ5g5UhnCwXCRdWJNqqH9T5aaxLsCn&ved=0ahUKEwj7xrza6aD-AhWMMVkFHXrMBU4Q4dUDCAs&uact=5&oq=pro+health+and+fitness+west+180&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABMgUIIRCgATIFCCEQoAE6CwgAEIAEELEDEIMBOggIABCABBCxAzoOCC4QgAQQsQMQxwEQ0QM6CwguEIAEELEDEIMBOggILhCABBCxAzoLCC4QigUQsQMQgwE6CwguEIAEEMcBENEDOggILhCABBDUAjoFCAAQgAQ6EQguEIAEELEDEIMBEMcBENEDOhEILhCDARDHARCxAxDRAxCABDoLCC4QgAQQsQMQ1AI6BAgAEAM6CwgAEIoFELEDEIMBOgoIABCABBCxAxAKOgsILhCABBDHARCvAToHCAAQgAQQCjoTCC4QgAQQsQMQgwEQxwEQ0QMQCjoNCC4QgAQQxwEQrwEQCjoTCC4QDRCABBCxAxCDARDHARDRAzoHCAAQDRCABDoJCAAQDRCABBAKOg0ILhANEIAEEMcBEK8BOg0ILhANEK8BEMcBEIAEOgsILhCvARDHARCABDoGCAAQFhAeOggIABAWEB4QCjoICAAQFhAeEA86AggmOggIABCKBRCGAzoFCCEQqwI6CAghEBYQHhAdUABY_1RgjF9oAHAAeACAAbUBiAHvFJIBBDI2LjWYAQCgAQE&sclient=gws-wiz";
+    qrDisplay = generateQRCode(w180);
+ }
 
 
+const onClick3 = () => {
+    let qrDisplay = document.getElementById('qrcode');
+    qrDisplay.innerHTML = "";
+    let inw = "https://www.google.com/search?q=prohealth+pt+ot+inwood&biw=1440&bih=789&sxsrf=APwXEdflHAPGRHIEUIXhUbFFKkwjPWgSYQ%3A1681181536413&ei=YMs0ZNvmGPal5NoP-vuU-AE&ved=0ahUKEwjblp-i6aD-AhX2ElkFHfo9BR8Q4dUDCBA&uact=5&oq=prohealth+pt+ot+inwood&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzoHCCMQsAMQJzoKCAAQRxDWBBCwAzoGCAAQFhAeOgIIJjoICAAQigUQhgNKBAhBGABQsgNYig9glxBoAXABeACAAbECiAHUCpIBBzEuMC40LjGYAQCgAQHIAQrAAQE&sclient=gws-wiz-serp";
+    qrDisplay = generateQRCode(inw);
+ }
 
 
+eastSide.onclick = onClick
+westSide150.onclick = onClick1
+westSide180.onclick = onClick2
+inwood.onclick = onClick3
 
 
-
-
-
-
-
+ const generateQRCode = (url) => {
+    const qrcode = new QRCode('qrcode', {
+        text: url, 
+        width: 300, 
+        height: 300
+    })
+}
 
