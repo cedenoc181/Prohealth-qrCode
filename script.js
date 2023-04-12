@@ -1,8 +1,5 @@
 // this is the nav bar elements
-let eastSide = document.getElementById('eastside');
-let westSide150 = document.getElementById('w150');
-let westSide180 = document.getElementById('w180');
-let inwood = document.getElementById('inwood');
+const nav = document.querySelectorAll('nav');
 
 const onClick = () => {
     let qrDisplay = document.getElementById('qrcode');
@@ -47,10 +44,10 @@ const onClick3 = () => {
  }
 
 
-eastSide.onclick = onClick
-westSide150.onclick = onClick1
-westSide180.onclick = onClick2
-inwood.onclick = onClick3
+nav[0].onclick = onClick
+nav[1].onclick = onClick1
+nav[2].onclick = onClick2
+nav[3].onclick = onClick3
 
 
  const generateQRCode = (url) => {
