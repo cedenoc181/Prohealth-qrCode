@@ -9,7 +9,7 @@ const qrDisplay = document.getElementById('qrcode')
 
 const changeToSpanish = () => {
     if(language.innerHTML === "Spanish"){
-language.innerHTML = "Englsih";
+language.innerHTML = "English";
 setTimeout(() => {
 prompt.innerHTML = "Gracias por tomarse el tiempo para escribirnos una reseña, Trabajamos duro para proporcionar la mejor atención de calidad para nuestros pacientes y deseamos seguir haciéndolo. Por favor, háganos saber cómo lo hicimos!"
 quetion[0].innerHTML = "¿Cómo ha sido tu experiencia con nosotros?"
