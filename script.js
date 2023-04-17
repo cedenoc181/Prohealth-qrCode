@@ -10,6 +10,9 @@ const qrDisplay = document.getElementById('qrcode')
 const changeToSpanish = () => {
     if(language.innerHTML === "Spanish"){
 language.innerHTML = "English";
+let location = document.getElementById('location');
+qrDisplay.innerHTML = "";
+location.innerHTML = "";
 setTimeout(() => {
 prompt.innerHTML = "Gracias por tomarse el tiempo para escribirnos una reseña, Trabajamos duro para proporcionar la mejor atención de calidad para nuestros pacientes y deseamos seguir haciéndolo. Por favor, háganos saber cómo lo hicimos!"
 quetion[0].innerHTML = "¿Cómo ha sido tu experiencia con nosotros?"
@@ -19,6 +22,9 @@ qrDisplay.innerHTML = "Elija una clínica arriba para generar un código QR"
 }, 300);
     } else {
         language.innerHTML = "Spanish";
+        let location = document.getElementById('location');
+        qrDisplay.innerHTML = "";
+        location.innerHTML = "";
         setTimeout(() => {
         prompt.innerHTML = "Thank you for taking the time to write us a review, We work hard to provide the best quality care for our patients and wish to continue doing so. Please let us know how we did!"
         quetion[0].innerHTML = "How has your experience with us been?"
@@ -28,21 +34,6 @@ qrDisplay.innerHTML = "Elija una clínica arriba para generar un código QR"
         }, 300);
     }
 }
-
-
-// const changeToEnglish = () => {
-//     language.innerHTML = "Spanish";
-//     setTimeout(() => {
-//     prompt.innerHTML = "Thank you for taking the time to write us a review, We work hard to provide the best quality care for our patients and wish to continue doing so. Please let us know how we did!"
-//     quetion[0].innerHTML = "How has your experience with us been?"
-//     quetion[1].innerHTML = "Have you seen any noticable difference?"
-//     quetion[2].innerHTML = "It would be extremely helpful to name your Physical therapist in your feedback!"
-//     qrDisplay.innerHTML = "Pick a Clinic above to generate a QR Code"
-//     }, 300);
-//     }
-
-
-
 
 
 const showSpinner = () => {
