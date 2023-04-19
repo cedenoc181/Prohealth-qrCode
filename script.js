@@ -47,7 +47,7 @@ const onClick = () => {
     let location = document.getElementById('location');
     qrDisplay.innerHTML = "";
     location.innerHTML = "";
-    let east = "https://www.google.com/search?q=prohealth+pt+ot&oq=pro&aqs=chrome.2.69i60j69i57j69i59l2j69i65j69i60j69i65j69i60.3356j0j7&sourceid=chrome&ie=UTF-8";
+    let east = "https://www.google.com/search?q=Prohealth+and+Fitness+PT+OT+PLLC%2C+1041+3rd+Avenue+%23204%2C+New+York%2C+NY&oq=Prohealth+and+Fitness+PT+OT+PLLC%2C+1041+3rd+Avenue+%23204%2C+New+York%2C+NY&aqs=chrome..69i57.862j0j1&sourceid=chrome&ie=UTF-8";
     showSpinner();
     setTimeout(() => {
         hideSpinner();
@@ -62,7 +62,7 @@ const onClick = () => {
     let location = document.getElementById('location');
     qrDisplay.innerHTML = "";
         location.innerHTML = "";
-    let w150 = "https://www.google.com/search?q=pro+health+and+fitness+west+150&ei=5Ms0ZOHZJ82t5NoPwLyawAU&ved=0ahUKEwjh26bh6aD-AhXNFlkFHUCeBlgQ4dUDCBA&uact=5&oq=pro+health+and+fitness+west+150&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQogQyBQgAEKIEMgUIABCiBDoKCAAQRxDWBBCwA0oECEEYAFDmA1jqCGCMCmgBcAF4AIABWYgBngGSAQEymAEAoAEByAEIwAEB&sclient=gws-wiz-serp";
+    let w150 = "https://www.google.com/search?q=prohealth+and+fitness+pt+ot+pllc+150+west+end+ave+m+new+york%2C+ny+10032&sxsrf=APwXEdfMYUjkc4j4ZB2PDOhnCq01jFIR4w%3A1681925704636&ei=SCZAZNeiJtaaptQP6LWDgA0&ved=0ahUKEwjX5qbBvbb-AhVWjYkEHejaANAQ4dUDCA8&oq=prohealth+and+fitness+pt+ot+pllc+150+west+end+ave+m+new+york%2C+ny+10032&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQDEoECEEYAFAAWABgAGgAcAF4AIABAIgBAJIBAJgBAKABAQ&sclient=gws-wiz-serp#lrd=0x89c259f087359c13:0xe299b2b9884f1f68,3,,,,";
     showSpinner();
     setTimeout(() => {
         hideSpinner();
@@ -76,7 +76,7 @@ const onClick2 = () => {
         let location = document.getElementById('location');
     qrDisplay.innerHTML = "";
         location.innerHTML = "";
-    let w180 = "https://www.google.com/search?q=pro+health+and+fitness+west+180&source=hp&ei=1ss0ZPuDFIzj5NoP-piX8AQ&iflsig=AOEireoAAAAAZDTZ5g5UhnCwXCRdWJNqqH9T5aaxLsCn&ved=0ahUKEwj7xrza6aD-AhWMMVkFHXrMBU4Q4dUDCAs&uact=5&oq=pro+health+and+fitness+west+180&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABMgUIIRCgATIFCCEQoAE6CwgAEIAEELEDEIMBOggIABCABBCxAzoOCC4QgAQQsQMQxwEQ0QM6CwguEIAEELEDEIMBOggILhCABBCxAzoLCC4QigUQsQMQgwE6CwguEIAEEMcBENEDOggILhCABBDUAjoFCAAQgAQ6EQguEIAEELEDEIMBEMcBENEDOhEILhCDARDHARCxAxDRAxCABDoLCC4QgAQQsQMQ1AI6BAgAEAM6CwgAEIoFELEDEIMBOgoIABCABBCxAxAKOgsILhCABBDHARCvAToHCAAQgAQQCjoTCC4QgAQQsQMQgwEQxwEQ0QMQCjoNCC4QgAQQxwEQrwEQCjoTCC4QDRCABBCxAxCDARDHARDRAzoHCAAQDRCABDoJCAAQDRCABBAKOg0ILhANEIAEEMcBEK8BOg0ILhANEK8BEMcBEIAEOgsILhCvARDHARCABDoGCAAQFhAeOggIABAWEB4QCjoICAAQFhAeEA86AggmOggIABCKBRCGAzoFCCEQqwI6CAghEBYQHhAdUABY_1RgjF9oAHAAeACAAbUBiAHvFJIBBDI2LjWYAQCgAQE&sclient=gws-wiz";
+    let w180 = "https://www.google.com/search?q=prohealth+and+fitness+pt+ot+PLLC+180+west+end+ave+%231M+New+York%2C+NY+10032&sxsrf=APwXEdfITY3itlazwf1HZDsyKcM3q-9yQw%3A1681925585855&ei=0SVAZN3OM8SaptQPgsGw4AE&ved=0ahUKEwid-9SIvbb-AhVEjYkEHYIgDBwQ4dUDCA8&oq=prohealth+and+fitness+pt+ot+PLLC+180+west+end+ave+%231M+New+York%2C+NY+10032&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQDEoECEEYAFAAWABgAGgAcAF4AIABAIgBAJIBAJgBAKABAQ&sclient=gws-wiz-serp#lrd=0x89c2586053de2a13:0xd9035cbeef4b6b48,1,,,,";
     // add spinner for annimagion and use Time out function to porperly design thhe annimation 
     showSpinner();
     setTimeout(() => {
@@ -91,7 +91,7 @@ const onClick3 = () => {
         let location = document.getElementById('location');
     qrDisplay.innerHTML = "";
         location.innerHTML = "";
-    let inw = "https://www.google.com/search?q=prohealth+pt+ot+inwood&biw=1440&bih=789&sxsrf=APwXEdflHAPGRHIEUIXhUbFFKkwjPWgSYQ%3A1681181536413&ei=YMs0ZNvmGPal5NoP-vuU-AE&ved=0ahUKEwjblp-i6aD-AhX2ElkFHfo9BR8Q4dUDCBA&uact=5&oq=prohealth+pt+ot+inwood&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzoHCCMQsAMQJzoKCAAQRxDWBBCwAzoGCAAQFhAeOgIIJjoICAAQigUQhgNKBAhBGABQsgNYig9glxBoAXABeACAAbECiAHUCpIBBzEuMC40LjGYAQCgAQHIAQrAAQE&sclient=gws-wiz-serp";
+    let inw = "https://www.google.com/search?q=prohealth+and+fitness+pt+ot+PLLC+4915+Broadway+New+York%2C+NY+10034&oq=prohealth+and+fitness+pt+ot+PLLC+4915+Broadway+New+York%2C+NY+10034&aqs=chrome..69i57.423j0j7&sourceid=chrome&ie=UTF-8#lrd=0x89c2f3094dda387b:0x4594465714fce2fb,1,,,,";
     showSpinner();
     setTimeout(() => {
         hideSpinner();
