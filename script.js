@@ -17,7 +17,7 @@ setTimeout(() => {
 prompt.innerHTML = "Gracias por tomarse el tiempo para escribirnos una reseña, trabajamos duro para proporcionar la mejor atención de calidad para nuestros pacientes y deseamos seguir haciéndolo. Por favor, háganos saber cómo lo hicimos!"
 quetion[0].innerHTML = "¿Cómo ha sido tu experiencia con nosotros?"
 quetion[1].innerHTML = "¿Has visto alguna diferencia notable?"
-quetion[2].innerHTML = "Seria muy util nombrar a su fisioterapeuta en su reseña!"
+quetion[2].innerHTML = "Seria muy util nombrar a su ocupacional o físico terapeuta en su reseña!"
 qrDisplay.innerHTML = "Elija una clínica arriba para generar un código QR"
 }, 300);
     } else {
