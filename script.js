@@ -8,8 +8,8 @@ const qrDisplay = document.getElementById('qrcode')
 
 
 const changeToSpanish = () => {
-    if(language.innerHTML === "Spanish"){
-language.innerHTML = "English";
+    if(language.innerHTML === "Change to Spanish"){
+language.innerHTML = "Change to English";
 let location = document.getElementById('location');
 qrDisplay.innerHTML = "";
 location.innerHTML = "";
@@ -21,7 +21,7 @@ quetion[2].innerHTML = "Seria muy util nombrar a su Físico o Ocupacional terape
 qrDisplay.innerHTML = "Elija una clínica arriba para generar un código QR"
 }, 300);
     } else {
-        language.innerHTML = "Spanish";
+        language.innerHTML = "Change to Spanish";
         let location = document.getElementById('location');
         qrDisplay.innerHTML = "";
         location.innerHTML = "";
@@ -30,7 +30,7 @@ qrDisplay.innerHTML = "Elija una clínica arriba para generar un código QR"
         quetion[0].innerHTML = "How has your experience with us been?"
         quetion[1].innerHTML = "Have you seen any noticable difference?"
         quetion[2].innerHTML = "It would be extremely helpful to name your Physical or Occupational therapist in your feedback!"
-        qrDisplay.innerHTML = "Pick a Clinic above to generate a QR Code"
+        qrDisplay.innerHTML = "Select a clinic above to generate a QR Code"
         }, 300);
     }
 }
