@@ -47,7 +47,7 @@ const onClick = () => {
     let location = document.getElementById('location');
     qrDisplay.innerHTML = "";
     location.innerHTML = "";
-    let east = "https://www.google.com/search?q=Prohealth+and+Fitness+PT+OT+PLLC%2C+1041+3rd+Avenue+%23204%2C+New+York%2C+NY&oq=Prohealth+and+Fitness+PT+OT+PLLC%2C+1041+3rd+Avenue+%23204%2C+New+York%2C+NY&aqs=chrome..69i57.862j0j1&sourceid=chrome&ie=UTF-8";
+    let east = "https://www.google.com/search?q=prohealth+and+fitness+pt+ot+1041+3rd+avenue+reviews&oq=prohealth+and+fit&aqs=chrome.0.35i39j35i39i650j69i57j46i175i199i512l2j0i22i30j0i10i22i30j0i22i30l3.16039j0j15&sourceid=chrome&ie=UTF-8";
     showSpinner();
     setTimeout(() => {
         hideSpinner();
@@ -62,7 +62,7 @@ const onClick = () => {
     let location = document.getElementById('location');
     qrDisplay.innerHTML = "";
         location.innerHTML = "";
-    let w150 = "https://www.google.com/search?q=prohealth+and+fitness+pt+ot+pllc+150+west+end+ave+m+new+york%2C+ny+10032&sxsrf=APwXEdfMYUjkc4j4ZB2PDOhnCq01jFIR4w%3A1681925704636&ei=SCZAZNeiJtaaptQP6LWDgA0&ved=0ahUKEwjX5qbBvbb-AhVWjYkEHejaANAQ4dUDCA8&oq=prohealth+and+fitness+pt+ot+pllc+150+west+end+ave+m+new+york%2C+ny+10032&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQDEoECEEYAFAAWABgAGgAcAF4AIABAIgBAJIBAJgBAKABAQ&sclient=gws-wiz-serp#lrd=0x89c259f087359c13:0xe299b2b9884f1f68,3,,,,";
+    let w150 = "https://www.google.com/search?q=Pro-Health+%26+Fitness+Office+&sxsrf=APwXEdc8MkBYsK_m6Jcb-bjfx-IMWUZY0g%3A1687637485401&ei=7U2XZMyCGIGe5NoPoPiFiA4&ved=0ahUKEwiMrc7G29z_AhUBD1kFHSB8AeEQ4dUDCBA&uact=5&oq=Pro-Health+%26+Fitness+Office+&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzICCCY6CggAEEcQ1gQQsANKBAhBGABQzwlY_xFgsBpoAXABeACAAUSIAZIDkgEBN5gBAKABAcABAcgBBQ&sclient=gws-wiz-serp";
     showSpinner();
     setTimeout(() => {
         hideSpinner();
@@ -76,7 +76,7 @@ const onClick2 = () => {
         let location = document.getElementById('location');
     qrDisplay.innerHTML = "";
         location.innerHTML = "";
-    let w180 = "https://www.google.com/search?q=prohealth+and+fitness+pt+ot+PLLC+180+west+end+ave+%231M+New+York%2C+NY+10032&sxsrf=APwXEdfITY3itlazwf1HZDsyKcM3q-9yQw%3A1681925585855&ei=0SVAZN3OM8SaptQPgsGw4AE&ved=0ahUKEwid-9SIvbb-AhVEjYkEHYIgDBwQ4dUDCA8&oq=prohealth+and+fitness+pt+ot+PLLC+180+west+end+ave+%231M+New+York%2C+NY+10032&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQDEoECEEYAFAAWABgAGgAcAF4AIABAIgBAJIBAJgBAKABAQ&sclient=gws-wiz-serp#lrd=0x89c2586053de2a13:0xd9035cbeef4b6b48,1,,,,";
+    let w180 = "https://www.google.com/search?q=prohealth+and+fitness+pt+ot+westend+180+reviews&sxsrf=APwXEdc5_ahyNMlu_DTEXUL8HpbT1-dzPA%3A1687636955848&ei=20uXZKmYM9yl5NoP6faceA&ved=0ahUKEwjp8YzK2dz_AhXcElkFHWk7Bw8Q4dUDCBA&uact=5&oq=prohealth+and+fitness+pt+ot+westend+180+reviews&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCCEQqwI6CwgAEIkFEKIEELADOggIABCiBBCwA0oECEEYAVDpA1jpA2CYDWgBcAB4AIAB-QaIAfkGkgEDNi0xmAEAoAEBwAEByAEE&sclient=gws-wiz-serp";
     // add spinner for annimagion and use Time out function to porperly design thhe annimation 
     showSpinner();
     setTimeout(() => {
@@ -91,7 +91,7 @@ const onClick3 = () => {
         let location = document.getElementById('location');
     qrDisplay.innerHTML = "";
         location.innerHTML = "";
-    let inw = "https://www.google.com/search?q=prohealth+and+fitness+pt+ot+PLLC+4915+Broadway+New+York%2C+NY+10034&oq=prohealth+and+fitness+pt+ot+PLLC+4915+Broadway+New+York%2C+NY+10034&aqs=chrome..69i57.423j0j7&sourceid=chrome&ie=UTF-8#lrd=0x89c2f3094dda387b:0x4594465714fce2fb,1,,,,";
+    let inw = "https://www.google.com/search?q=prohealth+and+fitness+pt+ot+inwood+reviews&sxsrf=APwXEdd0AgBUSl14kxP8zQq13i_Co6YqdA%3A1687636961050&ei=4UuXZNXfAuibptQP196XWA&ved=0ahUKEwiV1MrM2dz_AhXojYkEHVfvBQsQ4dUDCBA&uact=5&oq=prohealth+and+fitness+pt+ot+inwood+reviews&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzoKCAAQRxDWBBCwAzoGCAAQBxAeOggIABCKBRCGAzoICAAQiQUQogQ6BQgAEKIEOgcIIxCwAhAnSgQIQRgAUMIcWKkwYMUxaAJwAXgAgAFtiAG3BJIBAzYuMZgBAKABAcABAcgBBA&sclient=gws-wiz-serp";
     showSpinner();
     setTimeout(() => {
         hideSpinner();
