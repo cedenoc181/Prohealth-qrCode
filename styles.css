@@ -107,15 +107,13 @@
 @media only screen and (max-width: 450px){
     .nav {
         font-size: smaller;
-        padding: 9px;
+        margin-left: 15px;;
+        padding: 10px;
         margin-top: 20px;
     }
 
     .nav-logo {
-        width: 70%;
-        height: 70%;
-        margin-left: 10px;
-        margin-top: 15px;
+        display: none;
     }
 
     #language {
