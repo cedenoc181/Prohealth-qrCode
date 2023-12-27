@@ -1,0 +1,159 @@
+* {
+    border: box-sizing;
+}
+
+#prompt {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.nav{
+    margin-top: 20px;
+}
+
+#qrcode {
+    width: 400px;
+    height: 355px;
+    margin-top: 35px;
+    margin-bottom: 75px;
+}
+
+#questions li {
+    padding-top: 15px;
+}
+
+
+@media only screen and (max-width: 1050px) {
+    #language {
+        margin-left: 15px; 
+        margin-right: 15px;
+        font-size: larger;
+    }
+    #prompt {
+        margin: 15px;
+    }
+
+    #questions li {
+        padding-top: 3%;
+    }
+
+     #questions li:nth-of-type(3) {
+            margin-left: 55px;
+            margin-right: 55px;
+           }
+
+        #location {
+            font-size: x-large;
+        }
+
+        #qrcode {
+            font-size: x-large;
+            width: 400px;
+            height: 350px;
+            padding: 20px 0px 20px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 75px;
+            margin-top: 35px;
+        }
+
+        .nav {
+            margin-top: 20px;
+        }
+}
+
+@media only screen and (max-width: 650px) {
+    #qrcode {
+        font-size: larger;
+        padding: 20px 0px 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px;
+        width: 300px;
+        height: 300px;  
+        margin-bottom: 75px;
+    }
+
+    #location {
+        font-size: larger;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .nav {
+        font-size: medium;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .nav-logo {
+        width: 100%;
+        height: 100%;
+        margin-left: 10px;
+    }
+
+    #prompt {
+        font-size: larger;
+        padding: 10px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 450px){
+    .nav {
+        font-size: smaller;
+        padding: 9px;
+        margin-top: 20px;
+    }
+
+    .nav-logo {
+        width: 70%;
+        height: 70%;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+
+    #language {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: large;
+    }
+
+    #prompt {
+        font-size: medium;
+        padding: 10px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #questions {
+        padding: 5%;
+        margin-top: 0;
+    }
+
+    #questions li {
+        padding-top: 10%;
+    }
+
+    #qrcode {
+        font-size: large;
+        padding: 30px 0px 30px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-top: 35px;
+        width: 250px;
+        height: 200px;  
+    }
+
+    #location {
+        font-size: large;
+        margin: 20px 0px 20px 0px;
+    }
+}
+
