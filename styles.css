@@ -15,18 +15,33 @@
     width: 400px;
     height: 355px;
     margin-top: 35px;
-    margin-bottom: 75px;
 }
 
 #questions li {
     padding-top: 15px;
 }
 
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
 .clinic {
+    float: left;
     padding: 20px;
     border: solid 3px rgba(56, 103, 170, 0.829);
     border-radius: 6%;
     
+}
+
+.Qr-space {
+    float: left;
+    clear: none;
+}
+
+.clinic, .Qr-space {
+    display: inline-block;
+    vertical-align: top; /* Optional: Aligns the top edges */
 }
 
 .col-1 {width: 40%;}
