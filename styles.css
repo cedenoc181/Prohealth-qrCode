@@ -3,6 +3,9 @@
 }
 
 #prompt {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -24,9 +27,11 @@
 }
 
 #qrcode {
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
     width: 350px;
     height: 270px;  /*fix thhis on screen size optimization*/
     margin-top: 35px; 
+    border: 1px solid black;
     
 }
 
