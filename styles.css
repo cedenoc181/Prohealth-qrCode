@@ -12,8 +12,8 @@
 }
 
 #qrcode {
-    width: 400px;
-    height: 355px;
+    width: 350px;
+    height: 295px;
     margin-top: 35px;
 }
 
@@ -23,29 +23,25 @@
 
 .container {
     display: flex;
-    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .clinic {
-    float: left;
-    padding: 20px;
+    padding: 15px;
     border: solid 3px rgba(56, 103, 170, 0.829);
     border-radius: 6%;
-    
 }
 
-.Qr-space {
-    float: left;
-    clear: none;
-}
 
 .clinic, .Qr-space {
-    display: inline-block;
-    vertical-align: top; /* Optional: Aligns the top edges */
+    vertical-align: top;
+    height: 350px;
+
+
 }
 
-.col-1 {width: 40%;}
-.col-2 {width: 60%;}
+.col-1 {width: 45%;}
+.col-2 {width: 55%;}
 .col-3 {width: 80%;}
 .col-4 {width: 100%;}
 
