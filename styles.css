@@ -6,6 +6,12 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#language {
+    border: 1px solid black;
+    border-radius: 4px;
+    width: fit-content;
+    float: right;
+}
 
 .nav{
     margin-top: 20px;
@@ -13,8 +19,8 @@
 
 #qrcode {
     width: 350px;
-    height: 295px;
-    margin-top: 35px;
+    height: 270px;  /*fix thhis on screen size optimization*/
+    margin-top: 35px; 
 }
 
 #questions li {
@@ -34,10 +40,7 @@
 
 
 .clinic, .Qr-space {
-    vertical-align: top;
-    height: 350px;
-
-
+    height: 375px;
 }
 
 .col-1 {width: 45%;}
