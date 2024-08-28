@@ -34,29 +34,34 @@ The website contains a navigation bar with options to select the clinic location
 -Inwood Clinic
 
 QR Code Generation
+
 Select a Clinic: Click on the desired clinic from the navigation bar.
 QR Code Display: A QR code will be generated and displayed on the screen after a short loading animation. Scanning this code with a smartphone will direct the user to the Google review page for that clinic.
+
 Language Toggle
+
 Switch Language: Click on the language toggle button (labeled "Change to Spanish" or "Change to English") to switch between English and Spanish text on the website.
 Review Prompt
 The website prompts users to leave a detailed review, encouraging them to mention their Physical or Occupational Therapist and describe their experience.
 
-Code Explanation
-Language Toggle: The changeToSpanish function changes the text on the page to Spanish and vice versa.
-QR Code Generation: The generateQRCode function creates a QR code based on the selected clinic's Google review URL.
-Loading Animation: The showSpinner and hideSpinner functions handle the display of a loading spinner while the QR code is being generated.
-Installation and Setup
-Clone the Repository: Clone this repository to your local machine.
-Open the HTML File: Open the index.html file in your browser to view and interact with the website.
 Technologies Used
+
 HTML: For structuring the web content.
+
 CSS: For styling the website.
+
 JavaScript: For dynamic interactions and functionality.
+
 QRCode.js: A JavaScript library for generating QR codes.
+
 Future Improvements
-Database Integration: Store reviews locally before they are submitted to Google.
-Expanded Language Support: Add more languages to cater to a wider audience.
-Analytics: Track the number of scans and reviews submitted through the QR codes.
+
+google maps API: abother option for users to interact with whenn selecting their clinic locations
+
+Custom API Integration:  use the Google Places API to fetch and display reviews from your Google My Business listing on the website.
+
+Embed a Review Button: embed a "Leave a Review" button on your site that directs users to your Google review page.
+
 License
 This project is licensed under the MIT License.
 
