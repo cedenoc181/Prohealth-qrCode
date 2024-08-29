@@ -1,5 +1,6 @@
 * {
     border: box-sizing;
+    overflow: auto;
 }
 
 #prompt {
@@ -46,10 +47,7 @@
 
 .clinic {
     padding: 15px;
-    border: solid 3px rgba(56, 103, 170, 0.829);
-    border-radius: 6%;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;}
-
+}
 
 .clinic, .Qr-space {
     height: 375px;
@@ -60,9 +58,12 @@
 }
 
 .googleOverview {
-    border: solid 2px black;
-    border-radius: 1%;
-    height: 500px;
+    border: solid 3px rgba(56, 103, 170, 0.829);
+    border-radius: 6%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    height: 400px;
     overflow-y: scroll;
 }
 

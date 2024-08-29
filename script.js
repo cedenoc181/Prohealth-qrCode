@@ -18,9 +18,9 @@ prompt.innerHTML = "Gracias por tomarse el tiempo para escribirnos una reseña, 
 quetion[0].innerHTML = "-Cómo ha sido tu experiencia con nosotros?"
 quetion[1].innerHTML = "-Has visto alguna diferencia notable?"
 quetion[2].innerHTML = "-Seria muy util nombrar a su Físico o Ocupacional terapeuta en su reseña!"
-qrDisplay.innerHTML = "Elija una clínica arriba para generar un código QR"
+location.innerHTML = "Elija una clínica arriba para generar un código QR"
 }, 300);
-    } else {
+    } else if (language.innerHTML !== "Change to Spanish") {
         language.innerHTML = "Change to Spanish";
         let location = document.getElementById('location');
         qrDisplay.innerHTML = "";
@@ -30,7 +30,7 @@ qrDisplay.innerHTML = "Elija una clínica arriba para generar un código QR"
         quetion[0].innerHTML = "-How has your experience with us been?"
         quetion[1].innerHTML = "-Have you seen any noticable difference?"
         quetion[2].innerHTML = "-It would be extremely helpful to name your Physical or Occupational therapist in your feedback!"
-        qrDisplay.innerHTML = "Select a clinic above to generate a QR Code"
+        location.innerHTML = "Select a clinic above to generate a QR Code"
         }, 300);
     }
 }
