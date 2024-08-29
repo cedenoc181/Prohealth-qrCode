@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.6"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -125,7 +126,14 @@
         </div>
       </div>
       <div class="google-container">
-            
+        <gmpx-api-loader key="AIzaSyC5-9bgZEZiMQuc5BNlAzsmS8U9LlormuA" solution-channel="GMP_GCC_placeoverview_v1_xl"></gmpx-api-loader>
+        <div class="googleOverview col-2">
+          <gmpx-place-overview place="ChIJlzp0AzdZwokRfQYnJKsE_C8">
+            <gmpx-place-directions-button slot="action">
+              Directions
+            </gmpx-place-directions-button>
+          </gmpx-place-overview>
+        </div>      
       </div>
     </main>
     <script src="script.js"></script>
