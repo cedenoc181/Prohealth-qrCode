@@ -62,6 +62,9 @@
 }
 
 .clinic {
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-right-color: black;
     padding: 15px;
 }
 
