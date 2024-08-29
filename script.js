@@ -114,7 +114,7 @@ nav[1].onclick = onClick1;
 nav[2].onclick = onClick2;
 nav[3].onclick = onClick3;
 language.onclick = changeToSpanish;
-// language.onclick = changeToEnglish;
+
 
 
 
