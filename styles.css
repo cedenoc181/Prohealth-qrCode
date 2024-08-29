@@ -3,10 +3,25 @@
     overflow: auto;
 }
 
+.welcome {
+    font-size: 30px;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
 #prompt {
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-top: 5px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -19,6 +34,7 @@
 }
 
 #location {
+    margin-top: 20px;
     box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
 
