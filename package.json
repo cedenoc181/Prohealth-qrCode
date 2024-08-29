@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "@googlemaps/extended-component-library": "^0.6.11"
+    "@googlemaps/extended-component-library": "^0.6.11",
+    "express": "^4.19.2",
+    "node": "^22.7.0",
+    "puppeteer": "^23.2.1"
   }
 }
