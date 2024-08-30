@@ -1,10 +1,10 @@
 // this is the nav bar elements
 const nav = document.querySelectorAll('nav');
-const prompt = document.getElementById('prompt')
-const quetion = document.querySelectorAll('li')
-const language = document.getElementById('language')
-const qrDisplay = document.getElementById('qrcode')
-
+const prompt = document.getElementById('prompt');
+const quetion = document.querySelectorAll('li');
+const language = document.getElementById('language');
+const qrDisplay = document.getElementById('qrcode');
+const googleOverview = document.querySelector('.google-container');
 
 
 const changeToSpanish = () => {
@@ -55,10 +55,18 @@ const onClick = () => {
     let location = document.getElementById('location');
     qrDisplay.innerHTML = "";
     location.innerHTML = "";
+    googleOverview.innerHTML = "";
     let east = "https://www.google.com/search?q=prohealth+and+fitness+pt+ot+1041+3rd+avenue+reviews&oq=prohealth+and+fit&aqs=chrome.0.35i39j35i39i650j69i57j46i175i199i512l2j0i22i30j0i10i22i30j0i22i30l3.16039j0j15&sourceid=chrome&ie=UTF-8";
     showSpinner();
     setTimeout(() => {
         hideSpinner();
+        googleOverview.innerHTML = `<h2 class="google-title">What others are saying about our Upper Eastside clinics</h2>
+        <gmpx-api-loader key="AIzaSyC5-9bgZEZiMQuc5BNlAzsmS8U9LlormuA" solution-channel="GMP_GCC_placeoverview_v1_xl"></gmpx-api-loader>
+        <div class="googleOverview col-3">
+          <gmpx-place-overview place="ChIJlzp0AzdZwokRfQYnJKsE_C8">
+            <gmpx-place-directions-button slot="action">
+            </gmpx-place-directions-button>
+          </gmpx-place-overview>`
         location.innerHTML = "Pro Health and Fitness Eastside clinic"
         qrDisplay = generateQRCode(east);
     }, 1000);
