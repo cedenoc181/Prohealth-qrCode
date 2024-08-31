@@ -68,6 +68,10 @@ const onClick = () => {
             <gmpx-place-directions-button slot="action">
             </gmpx-place-directions-button>
           </gmpx-place-overview>
+          </div>
+          
+          <div class="PT-of-Clinic"> 
+          
           </div>`;
     location.innerHTML = "Pro Health and Fitness Upper Eastside clinic";
     qrDisplay = generateQRCode(east);
@@ -92,7 +96,11 @@ const onClick1 = () => {
     <gmpx-place-directions-button slot="action">
     </gmpx-place-directions-button>
   </gmpx-place-overview>
-</div>`;
+</div>          
+         
+<div class="PT-OT-of-Clinic"> 
+          
+          </div>`;
     location.innerHTML = "Pro Health and Fitness Westside clinic";
     qrDisplay = generateQRCode(w150);
   }, 1000);
@@ -117,7 +125,11 @@ const onClick2 = () => {
                      <gmpx-place-directions-button slot="action">
                      </gmpx-place-directions-button>
                 </gmpx-place-overview>
-             </div>`;
+             </div>          
+         
+             <div class="PT-of-Clinic"> 
+          
+          </div>`;
     location.innerHTML = "Pro Health and Fitness Upper Westside clinic";
     qrDisplay = generateQRCode(w180);
   }, 1000);
@@ -151,3 +163,10 @@ const generateQRCode = (url) => {
     height: 300,
   });
 };
+
+
+const placeIds = [
+    "ChIJlzp0AzdZwokRfQYnJKsE_C8", 
+    "ChIJ6SKmnohZwokR8lLs52FsYos", 
+    "ChIJEyreU2BYwokRSGtL775cA9k"
+];
