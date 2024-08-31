@@ -71,11 +71,9 @@ const onClick = () => {
             </gmpx-place-directions-button>
           </gmpx-place-overview>
           </div>`;
-    location.innerHTML = "Pro Health and Fitness Eastside clinic";
+    location.innerHTML = "Pro Health and Fitness Upper Eastside clinic";
     qrDisplay = generateQRCode(east);
   }, 1000);
-  // location.innerHTML = "Pro Health and Fitness Eastside clinic"
-  // qrDisplay = generateQRCode(east);
 };
 
 const onClick1 = () => {
@@ -97,7 +95,7 @@ const onClick1 = () => {
     </gmpx-place-directions-button>
   </gmpx-place-overview>
 </div>`;
-    location.innerHTML = "Pro Health and Fitness Westside 150 clinic";
+    location.innerHTML = "Pro Health and Fitness Westside clinic";
     qrDisplay = generateQRCode(w150);
   }, 1000);
 };
@@ -122,29 +120,29 @@ const onClick2 = () => {
                      </gmpx-place-directions-button>
                 </gmpx-place-overview>
              </div>`;
-    location.innerHTML = "Pro Health and Fitness Westside 180 clinic";
+    location.innerHTML = "Pro Health and Fitness Upper Westside clinic";
     qrDisplay = generateQRCode(w180);
   }, 1000);
 };
 
-const onClick3 = () => {
-  let location = document.getElementById("location");
-  qrDisplay.innerHTML = "";
-  location.innerHTML = "";
-  let inw =
-    "https://www.google.com/search?q=prohealth+and+fitness+pt+ot+inwood+reviews&sxsrf=APwXEdd0AgBUSl14kxP8zQq13i_Co6YqdA%3A1687636961050&ei=4UuXZNXfAuibptQP196XWA&ved=0ahUKEwiV1MrM2dz_AhXojYkEHVfvBQsQ4dUDCBA&uact=5&oq=prohealth+and+fitness+pt+ot+inwood+reviews&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzoKCAAQRxDWBBCwAzoGCAAQBxAeOggIABCKBRCGAzoICAAQiQUQogQ6BQgAEKIEOgcIIxCwAhAnSgQIQRgAUMIcWKkwYMUxaAJwAXgAgAFtiAG3BJIBAzYuMZgBAKABAcABAcgBBA&sclient=gws-wiz-serp";
-  showSpinner();
-  setTimeout(() => {
-    hideSpinner();
-    location.innerHTML = "Pro Health and Fitness Inwood clinic";
-    qrDisplay = generateQRCode(inw);
-  }, 1000);
-};
+// const onClick3 = () => {
+//   let location = document.getElementById("location");
+//   qrDisplay.innerHTML = "";
+//   location.innerHTML = "";
+//   let inw =
+//     "https://www.google.com/search?q=prohealth+and+fitness+pt+ot+inwood+reviews&sxsrf=APwXEdd0AgBUSl14kxP8zQq13i_Co6YqdA%3A1687636961050&ei=4UuXZNXfAuibptQP196XWA&ved=0ahUKEwiV1MrM2dz_AhXojYkEHVfvBQsQ4dUDCBA&uact=5&oq=prohealth+and+fitness+pt+ot+inwood+reviews&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzoKCAAQRxDWBBCwAzoGCAAQBxAeOggIABCKBRCGAzoICAAQiQUQogQ6BQgAEKIEOgcIIxCwAhAnSgQIQRgAUMIcWKkwYMUxaAJwAXgAgAFtiAG3BJIBAzYuMZgBAKABAcABAcgBBA&sclient=gws-wiz-serp";
+//   showSpinner();
+//   setTimeout(() => {
+//     hideSpinner();
+//     location.innerHTML = "Pro Health and Fitness Inwood clinic";
+//     qrDisplay = generateQRCode(inw);
+//   }, 1000);
+// };
 
 nav[0].onclick = onClick;
 nav[1].onclick = onClick1;
 nav[2].onclick = onClick2;
-nav[3].onclick = onClick3;
+// nav[3].onclick = onClick3; //inwood location out of business
 language.onclick = changeToSpanish;
 
 hideSpinner();
