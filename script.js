@@ -7,44 +7,42 @@ const qrDisplay = document.getElementById("qrcode");
 const googleOverview = document.querySelector(".google-container");
 
 const changeToSpanish = () => {
-  if (language.innerHTML === "language_spanish") {
-    language.innerHTML = "language_us";
+    const isSpanish = language.innerHTML === "language_spanish";
+    language.innerHTML = isSpanish ? "language_us" : "language_spanish";
+  
     let location = document.getElementById("location");
     qrDisplay.innerHTML = "";
     location.innerHTML = "";
+  
     setTimeout(() => {
-      prompt.innerHTML =
-        "Gracias por tomarse el tiempo para escribirnos una reseña, trabajamos duro para proporcionar la mejor atención de calidad para nuestros pacientes y deseamos seguir haciéndolo. Por favor, háganos saber cómo lo hicimos!";
-      quetion[0].innerHTML = `<span class="material-symbols-outlined">
-    arrow_right
-    </span> Cómo ha sido tu experiencia con nosotros?`;
-      quetion[1].innerHTML = `<span class="material-symbols-outlined">
-    arrow_right
-    </span> Has visto alguna diferencia notable?`;
-      quetion[2].innerHTML =
-        "Seria muy util nombrar a su Físico o Ocupacional terapeuta en su reseña!";
-      location.innerHTML = "Elija una clínica arriba para generar un código QR";
+      if (isSpanish) {
+        prompt.innerHTML =
+          "Thank you for taking the time to write us a review, We work hard to provide the best quality care for our patients and wish to continue doing so. Please let us know how we did!";
+        quetion[0].innerHTML = `<span class="material-symbols-outlined">
+      arrow_right
+      </span> How has your experience with us been?`;
+        quetion[1].innerHTML = `<span class="material-symbols-outlined">
+      arrow_right
+      </span> Have you seen any noticable difference?`;
+        quetion[2].innerHTML =
+          "It would be extremely helpful to name your Physical or Occupational therapist in your feedback!";
+        location.innerHTML = "Select a clinic above to generate a QR Code";
+      } else {
+        prompt.innerHTML =
+          "Gracias por tomarse el tiempo para escribirnos una reseña, trabajamos duro para proporcionar la mejor atención de calidad para nuestros pacientes y deseamos seguir haciéndolo. Por favor, háganos saber cómo lo hicimos!";
+        quetion[0].innerHTML = `<span class="material-symbols-outlined">
+      arrow_right
+      </span> Cómo ha sido tu experiencia con nosotros?`;
+        quetion[1].innerHTML = `<span class="material-symbols-outlined">
+      arrow_right
+      </span> Has visto alguna diferencia notable?`;
+        quetion[2].innerHTML =
+          "Seria muy util nombrar a su Físico o Ocupacional terapeuta en su reseña!";
+        location.innerHTML = "Elija una clínica arriba para generar un código QR";
+      }
     }, 300);
-  } else if (language.innerHTML !== "language_spanish") {
-    language.innerHTML = "language_spanish";
-    let location = document.getElementById("location");
-    qrDisplay.innerHTML = "";
-    location.innerHTML = "";
-    setTimeout(() => {
-      prompt.innerHTML =
-        "Thank you for taking the time to write us a review, We work hard to provide the best quality care for our patients and wish to continue doing so. Please let us know how we did!";
-      quetion[0].innerHTML = `<span class="material-symbols-outlined">
-    arrow_right
-    </span> How has your experience with us been?`;
-      quetion[1].innerHTML = `<span class="material-symbols-outlined">
-    arrow_right
-    </span> Have you seen any noticable difference?`;
-      quetion[2].innerHTML =
-        "It would be extremely helpful to name your Physical or Occupational therapist in your feedback!";
-      location.innerHTML = "Select a clinic above to generate a QR Code";
-    }, 300);
-  }
-};
+  };
+  
 
 const showSpinner = () => {
   document.getElementById("spinner").style.display = "block";
