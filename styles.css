@@ -98,24 +98,26 @@
 
 .footer-container {
     display: flex;
-    padding: 10px 10px 10px 30px;
+    padding: 10px;
 }
 
-.contact, .clinic-locations-title, .hours-title{
+.contact-title, .location-title, .hours-title{
     font-size: 30px;
     font-weight: 700;
-}
-
-.hours {
     justify-content: center;
     text-align: center;
 }
 
-.contact-list {
+.hours-list, .contact-list, .location-list {
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-list, .location-list, .hours-list {
     font-size: 18px;
 }
 
-.contact-container, .location-container {
+.contact-container, .location-container, .hours-container {
     width: 33%;
 }
 
