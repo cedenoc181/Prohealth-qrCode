@@ -5,6 +5,8 @@ const quetion = document.querySelectorAll("li");
 const language = document.getElementById("language-icon");
 const qrDisplay = document.getElementById("qrcode");
 const googleOverview = document.querySelector(".google-container");
+const googleMaps = document.getElementById("map");
+
 
 const changeToSpanish = () => {
     const isSpanish = language.innerHTML === "language_spanish";
@@ -56,6 +58,7 @@ const onClick = () => {
   qrDisplay.innerHTML = "";
   location.innerHTML = "";
   googleOverview.innerHTML = "";
+  googleMaps.innerHTML = "";
   let east =
     "https://www.google.com/search?q=prohealth+and+fitness+pt+ot+1041+3rd+avenue+reviews&oq=prohealth+and+fit&aqs=chrome.0.35i39j35i39i650j69i57j46i175i199i512l2j0i22i30j0i10i22i30j0i22i30l3.16039j0j15&sourceid=chrome&ie=UTF-8";
   showSpinner();
@@ -73,6 +76,15 @@ const onClick = () => {
           <div class="PT-of-Clinic"> 
           
           </div>`;
+          googleMaps.innerHTML = `<iframe 
+        class="g-maps"
+        height="250"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC5-9bgZEZiMQuc5BNlAzsmS8U9LlormuA
+          &q=proHealth+and+Fitness+PT+OT+PLLC, New+York+NY">
+      </iframe>`;
     location.innerHTML = "Pro Health and Fitness Upper Eastside clinic";
     qrDisplay = generateQRCode(east);
   }, 1000);
@@ -83,6 +95,7 @@ const onClick1 = () => {
   qrDisplay.innerHTML = "";
   location.innerHTML = "";
   googleOverview.innerHTML = "";
+  googleMaps.innerHTML = "";
   let w150 =
     "https://www.google.com/search?q=Pro-Health+%26+Fitness+Office+&sxsrf=APwXEdc8MkBYsK_m6Jcb-bjfx-IMWUZY0g%3A1687637485401&ei=7U2XZMyCGIGe5NoPoPiFiA4&ved=0ahUKEwiMrc7G29z_AhUBD1kFHSB8AeEQ4dUDCBA&uact=5&oq=Pro-Health+%26+Fitness+Office+&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzICCCY6CggAEEcQ1gQQsANKBAhBGABQzwlY_xFgsBpoAXABeACAAUSIAZIDkgEBN5gBAKABAcABAcgBBQ&sclient=gws-wiz-serp";
   showSpinner();
@@ -101,6 +114,15 @@ const onClick1 = () => {
 <div class="PT-OT-of-Clinic"> 
           
           </div>`;
+googleMaps.innerHTML = `<iframe 
+        class="g-maps"
+        height="250"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC5-9bgZEZiMQuc5BNlAzsmS8U9LlormuA
+          &q=Pro-Health+Fitness+150+Westend+Avenue, New+York+NY">
+      </iframe>`
     location.innerHTML = "Pro Health and Fitness Westside clinic";
     qrDisplay = generateQRCode(w150);
   }, 1000);
@@ -111,6 +133,7 @@ const onClick2 = () => {
   qrDisplay.innerHTML = "";
   location.innerHTML = "";
   googleOverview.innerHTML = "";
+  googleMaps.innerHTML = "";
   let w180 =
     "https://www.google.com/search?q=prohealth+and+fitness+pt+ot+westend+180+reviews&sxsrf=APwXEdc5_ahyNMlu_DTEXUL8HpbT1-dzPA%3A1687636955848&ei=20uXZKmYM9yl5NoP6faceA&ved=0ahUKEwjp8YzK2dz_AhXcElkFHWk7Bw8Q4dUDCBA&uact=5&oq=prohealth+and+fitness+pt+ot+westend+180+reviews&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCCEQqwI6CwgAEIkFEKIEELADOggIABCiBBCwA0oECEEYAVDpA1jpA2CYDWgBcAB4AIAB-QaIAfkGkgEDNi0xmAEAoAEBwAEByAEE&sclient=gws-wiz-serp";
   // add spinner for annimagion and use Time out function to porperly design thhe annimation
@@ -130,6 +153,15 @@ const onClick2 = () => {
              <div class="PT-of-Clinic"> 
           
           </div>`;
+          googleMaps.innerHTML = ` <iframe 
+        class="g-maps"
+        height="250"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC5-9bgZEZiMQuc5BNlAzsmS8U9LlormuA
+          &q=Pro-Health+Fitness+180+Westend+Avenue, New+York+NY">
+      </iframe>`
     location.innerHTML = "Pro Health and Fitness Upper Westside clinic";
     qrDisplay = generateQRCode(w180);
   }, 1000);
@@ -165,8 +197,11 @@ const generateQRCode = (url) => {
 };
 
 
-const placeIds = [
-    "ChIJlzp0AzdZwokRfQYnJKsE_C8", 
-    "ChIJ6SKmnohZwokR8lLs52FsYos", 
-    "ChIJEyreU2BYwokRSGtL775cA9k"
-];
+// const placeIds = [
+//     "ChIJlzp0AzdZwokRfQYnJKsE_C8", 
+//     "ChIJ6SKmnohZwokR8lLs52FsYos", 
+//     "ChIJEyreU2BYwokRSGtL775cA9k"
+// ];
+
+
+// Pro-Health+&+Fitness+Office, New+York+NY
