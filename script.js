@@ -2,13 +2,13 @@
 const nav = document.querySelectorAll("nav");
 const prompt = document.getElementById("prompt");
 const quetion = document.querySelectorAll("li");
-const language = document.getElementById("language");
+const language = document.getElementById("language-icon");
 const qrDisplay = document.getElementById("qrcode");
 const googleOverview = document.querySelector(".google-container");
 
 const changeToSpanish = () => {
-  if (language.innerHTML === "Change to Spanish") {
-    language.innerHTML = "Change to English";
+  if (language.innerHTML === "language_spanish") {
+    language.innerHTML = "language_us";
     let location = document.getElementById("location");
     qrDisplay.innerHTML = "";
     location.innerHTML = "";
@@ -25,8 +25,8 @@ const changeToSpanish = () => {
         "Seria muy util nombrar a su Físico o Ocupacional terapeuta en su reseña!";
       location.innerHTML = "Elija una clínica arriba para generar un código QR";
     }, 300);
-  } else if (language.innerHTML !== "Change to Spanish") {
-    language.innerHTML = "Change to Spanish";
+  } else if (language.innerHTML !== "language_spanish") {
+    language.innerHTML = "language_spanish";
     let location = document.getElementById("location");
     qrDisplay.innerHTML = "";
     location.innerHTML = "";
