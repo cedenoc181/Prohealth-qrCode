@@ -85,7 +85,7 @@ const onClick = () => {
         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC5-9bgZEZiMQuc5BNlAzsmS8U9LlormuA
           &q=proHealth+and+Fitness+PT+OT+PLLC, New+York+NY">
       </iframe>`;
-    location.innerHTML = "Pro Health and Fitness Upper Eastside clinic";
+    location.innerHTML = "Scan here for Upper Eastside clinic";
     qrDisplay = generateQRCode(east);
   }, 1000);
 };
@@ -123,7 +123,7 @@ googleMaps.innerHTML = `<iframe
         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC5-9bgZEZiMQuc5BNlAzsmS8U9LlormuA
           &q=Pro-Health+Fitness+150+Westend+Avenue, New+York+NY">
       </iframe>`
-    location.innerHTML = "Pro Health and Fitness Westside clinic";
+    location.innerHTML = "Scan here for Westside clinic";
     qrDisplay = generateQRCode(w150);
   }, 1000);
 };
@@ -162,7 +162,7 @@ const onClick2 = () => {
         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC5-9bgZEZiMQuc5BNlAzsmS8U9LlormuA
           &q=Pro-Health+Fitness+180+Westend+Avenue, New+York+NY">
       </iframe>`
-    location.innerHTML = "Pro Health and Fitness Upper Westside clinic";
+    location.innerHTML = "Scan here for Upper Westside clinic";
     qrDisplay = generateQRCode(w180);
   }, 1000);
 };
