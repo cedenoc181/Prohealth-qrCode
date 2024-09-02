@@ -120,6 +120,48 @@
 .contact-container, .location-container, .hours-container {
     width: 33%;
 }
+/* 
+.providers {
+    width: 100%;
+    padding-left: 34%;
+} */
+
+.provider-container {
+    display: flex;
+    padding-left: 15%;
+    padding-right: 5%;
+}
+
+.provider-card {
+    width: 50%;
+}
+
+.provider-title {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 2%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.provider-name {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.provider-img {
+    width: 375px;
+    height: 350px;
+    border-right: solid 2px gray;
+    border-bottom: solid 2px gray;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+
+
+
 
 #map {
     padding: 5%;
