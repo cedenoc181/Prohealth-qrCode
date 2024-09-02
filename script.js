@@ -22,23 +22,26 @@ const changeToSpanish = () => {
           "Thank you for taking the time to write us a review, We work hard to provide the best quality care for our patients and wish to continue doing so. Please let us know how we did!";
         quetion[0].innerHTML = `<span class="material-symbols-outlined">
       arrow_right
-      </span> How has your experience with us been?`;
+      </span> How would you describe the quality of care you received?`;
         quetion[1].innerHTML = `<span class="material-symbols-outlined">
       arrow_right
-      </span> Have you seen any noticable difference?`;
+      </span>Did our therapists help you achieve your recovery goals? How?`;
         quetion[2].innerHTML =
           "It would be extremely helpful to name your Physical or Occupational therapist in your feedback!";
         location.innerHTML = "Select a clinic above to generate a QR Code";
       } else {
         prompt.innerHTML =
           "Gracias por tomarse el tiempo para escribirnos una reseña, trabajamos duro para proporcionar la mejor atención de calidad para nuestros pacientes y deseamos seguir haciéndolo. Por favor, háganos saber cómo lo hicimos!";
-        quetion[0].innerHTML = `<span class="material-symbols-outlined">
+        
+          quetion[0].innerHTML = `<span class="material-symbols-outlined">
       arrow_right
-      </span> Cómo ha sido tu experiencia con nosotros?`;
-        quetion[1].innerHTML = `<span class="material-symbols-outlined">
+      </span> Cómo describiría la calidad de la atención que recibió?`;
+        
+      quetion[1].innerHTML = `<span class="material-symbols-outlined">
       arrow_right
-      </span> Has visto alguna diferencia notable?`;
-        quetion[2].innerHTML =
+      </span> Recomendaría nuestros servicios a familiares o amigos?`;
+       
+      quetion[2].innerHTML =
           "Seria muy util nombrar a su Físico o Ocupacional terapeuta en su reseña!";
         location.innerHTML = "Elija una clínica arriba para generar un código QR";
       }
