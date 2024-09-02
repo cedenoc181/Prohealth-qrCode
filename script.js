@@ -6,6 +6,11 @@ const language = document.getElementById("language-icon");
 const qrDisplay = document.getElementById("qrcode");
 const googleOverview = document.querySelector(".google-container");
 const googleMaps = document.getElementById("map");
+const providersList = document.getElementById("providers");
+
+
+
+
 
 
 const changeToSpanish = () => {
@@ -88,6 +93,17 @@ const onClick = () => {
         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC5-9bgZEZiMQuc5BNlAzsmS8U9LlormuA
           &q=proHealth+and+Fitness+PT+OT+PLLC, New+York+NY">
       </iframe>`;
+      providersList.innerHTML = `<h3 class="provider-title">Providers at Upper Eastside clinic</h3>
+          <div class="provider-container">
+          <figure class="provider-card">
+            <img class="provider-img" src="https://prohealthptot.com/wp-content/uploads/2023/03/Oscar-Moises-PT-DPT-02.jpg" alt="PT-provider-Upper-Eastside-clinic" />
+           <figcaption class="provider-name">Oscar Moises <span class="provider-credentials">PT, DPT</span></figcaption>
+          </figure>
+          <figure class="provider-card">
+            <img class="provider-img" src="https://prohealthptot.com/wp-content/uploads/2023/03/Alexandra-Burdo-OT-OTR_L-02.jpg" alt="OT-provider-Upper-Eastside-Clinic" />
+            <figcaption class="provider-name">Alexandra Burdo <span class="provider-credentials">MS, OTR/L, </br> Occupational Therapy Supervisor</span></figcaption>
+          </figure>
+        </div>`;
     location.innerHTML = "Scan here for Upper Eastside clinic";
     qrDisplay = generateQRCode(east);
   }, 1000);
@@ -99,6 +115,7 @@ const onClick1 = () => {
   location.innerHTML = "";
   googleOverview.innerHTML = "";
   googleMaps.innerHTML = "";
+  providersList.innerHTML = "";
   let w150 =
     "https://www.google.com/search?q=Pro-Health+%26+Fitness+Office+&sxsrf=APwXEdc8MkBYsK_m6Jcb-bjfx-IMWUZY0g%3A1687637485401&ei=7U2XZMyCGIGe5NoPoPiFiA4&ved=0ahUKEwiMrc7G29z_AhUBD1kFHSB8AeEQ4dUDCBA&uact=5&oq=Pro-Health+%26+Fitness+Office+&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzICCCY6CggAEEcQ1gQQsANKBAhBGABQzwlY_xFgsBpoAXABeACAAUSIAZIDkgEBN5gBAKABAcABAcgBBQ&sclient=gws-wiz-serp";
   showSpinner();
@@ -112,11 +129,7 @@ const onClick1 = () => {
     <gmpx-place-directions-button slot="action">
     </gmpx-place-directions-button>
   </gmpx-place-overview>
-</div>          
-         
-<div class="PT-OT-of-Clinic"> 
-          
-          </div>`;
+</div> `;
 googleMaps.innerHTML = `<iframe 
         class="g-maps"
         height="250"
@@ -125,7 +138,23 @@ googleMaps.innerHTML = `<iframe
         referrerpolicy="no-referrer-when-downgrade"
         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC5-9bgZEZiMQuc5BNlAzsmS8U9LlormuA
           &q=Pro-Health+Fitness+150+Westend+Avenue, New+York+NY">
-      </iframe>`
+      </iframe>`;
+      providersList.innerHTML = `
+          <h3 class="provider-title">Providers at Westside clinic</h3>
+          <div class="provider-container">
+          <figure class="provider-card">
+            <img class="provider-img" src="https://prohealthptot.com/wp-content/uploads/2023/03/Sabrina-Yakubovich-PT-DPT-CSCS-02-480x480.jpg" alt="PT-provider-Westside-clinic" />
+           <figcaption class="provider-name">Sabrina Yakubovich <span class="provider-credentials">PT, DPT, CSCS</span></figcaption>
+          </figure>
+           <figure class="provider-card">
+            <img class="provider-img" src="https://prohealthptot.com/wp-content/uploads/2023/03/Joy-Ko-Pic-OTD-OTR_L-02-480x479.jpg" alt="PT-provider-Westside-clinic" />
+           <figcaption class="provider-name">Joy Ko<span class="provider-credentials"> OTD, OTR/L</span></figcaption>
+          </figure>
+          <figure class="provider-card">
+            <img class="provider-img" src="https://prohealthptot.com/wp-content/uploads/2023/03/Alexandra-Burdo-OT-OTR_L-02.jpg" alt="OT-provider-Upper-Eastside-Clinic" />
+            <figcaption class="provider-name">Alexandra Burdo <span class="provider-credentials">MS, OTR/L,</br> Occupational Therapy Supervisor</span></figcaption>
+          </figure>
+        </div>`;
     location.innerHTML = "Scan here for Westside clinic";
     qrDisplay = generateQRCode(w150);
   }, 1000);
@@ -151,11 +180,7 @@ const onClick2 = () => {
                      <gmpx-place-directions-button slot="action">
                      </gmpx-place-directions-button>
                 </gmpx-place-overview>
-             </div>          
-         
-             <div class="PT-of-Clinic"> 
-          
-          </div>`;
+             </div>`;
           googleMaps.innerHTML = ` <iframe 
         class="g-maps"
         height="250"
@@ -164,7 +189,15 @@ const onClick2 = () => {
         referrerpolicy="no-referrer-when-downgrade"
         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC5-9bgZEZiMQuc5BNlAzsmS8U9LlormuA
           &q=Pro-Health+Fitness+180+Westend+Avenue, New+York+NY">
-      </iframe>`
+      </iframe>`;
+    providersList.innerHTML = `
+    <h3 class="provider-title">Providers at Upper Westside clinic</h3>
+          <div class="provider-container">
+          <figure class="provider-card">
+            <img class="provider-img" src="https://prohealthptot.com/wp-content/uploads/2023/03/Colin-McGowan-Pic-PT-DPT-CertMDT-02-480x480.jpg" alt="PT-provider-Upper-Eastside-clinic" />
+           <figcaption class="provider-name">Colin McGowan<span class="provider-credentials">PT, DPT, cert. MDT</span></figcaption>
+          </figure>
+          </div>`;
     location.innerHTML = "Scan here for Upper Westside clinic";
     qrDisplay = generateQRCode(w180);
   }, 1000);
