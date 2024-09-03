@@ -31,7 +31,7 @@
 }
 
 #location {
-    margin-top: 20px;
+    padding-top: 20px;
     box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
 
@@ -95,7 +95,6 @@
     margin-bottom: 1%;
     font-weight: bold;
     font-size: 25px;
-    text-decoration: underline;
     text-align: center;
 }
 
@@ -146,7 +145,6 @@
     font-weight: bold;
     padding-bottom: 2%;
     text-align: center;
-    text-decoration: underline;
 }
 
 .provider-name {
@@ -234,9 +232,6 @@
             font-size: 25px;
             width: 275px;
             height: 275px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             margin-top: 15px;
         }
 
@@ -249,22 +244,17 @@
         }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 850px) {
     #qrcode {
-        font-size: larger;
-        padding: 20px 0px 20px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 35px;
-        width: 300px;
-        height: 300px;  
-        margin-bottom: 75px;
+        padding: 10px 0px 10px 0px;
+        width: 250px;
+        height: 250px;  
+        margin-bottom: 15px;
     }
 
     #location {
-        font-size: larger;
-        margin: 20px 0px 20px 0px;
+        font-size: 20px;
+        padding: 14px 0px 20px 0px;
     }
 
     .nav {
@@ -280,11 +270,16 @@
     }
 
     #prompt {
-        font-size: larger;
-        padding: 10px;
+        font-size: 16PX;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin-bottom: 0;
+        margin: 10px 10px 0px 10px;
     }
+
+    #questions li {
+        padding-top: 1%;
+        font-size: 15px;
+    }
+
 
 }
 
