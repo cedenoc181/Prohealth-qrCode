@@ -163,8 +163,9 @@
 
 }
 
-
-
+.provider-credentials {
+    color: rgba(143, 142, 142, 0.85);
+}
 
 
 #map {
