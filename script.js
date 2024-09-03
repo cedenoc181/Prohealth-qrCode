@@ -31,7 +31,7 @@ const changeToSpanish = () => {
       </span> How would you describe the quality of care you received?`;
         quetion[1].innerHTML = `<span class="material-symbols-outlined">
       arrow_right
-      </span>Did our therapists help you achieve your recovery goals? How?`;
+      </span>Would you recommend our services to family or friends?`;
         quetion[2].innerHTML =
           "It would be extremely helpful to name your Physical or Occupational therapist in your feedback!";
         location.innerHTML = "Select a clinic above to generate a QR Code";
