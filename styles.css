@@ -126,9 +126,6 @@
 .hours-list, .contact-list, .location-list {
     justify-content: center;
     text-align: center;
-}
-
-.contact-list, .location-list, .hours-list {
     font-size: 18px;
 }
 
@@ -306,6 +303,19 @@
 
     .googleOverview {
         height: 350px;
+    }
+
+    .contact-title, .location-title, .hours-title{
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .hours-list, .contact-list, .location-list {
+        font-size: 16px;
+    }
+
+    .footer-container {
+        padding: 15px;
     }
 
 }
