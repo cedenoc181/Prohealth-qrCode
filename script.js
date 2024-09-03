@@ -7,7 +7,7 @@ const qrDisplay = document.getElementById("qrcode");
 const googleOverview = document.querySelector(".google-container");
 const googleMaps = document.getElementById("map");
 const providersList = document.getElementById("providers");
-
+const instructions = document.querySelector(".instructions");
 
 
 
@@ -20,6 +20,7 @@ const changeToSpanish = () => {
     let location = document.getElementById("location");
     qrDisplay.innerHTML = "";
     location.innerHTML = "";
+    instructions.innerHTML = "";
   
     setTimeout(() => {
       if (isSpanish) {
@@ -34,6 +35,9 @@ const changeToSpanish = () => {
         quetion[2].innerHTML =
           "It would be extremely helpful to name your Physical or Occupational therapist in your feedback!";
         location.innerHTML = "Select a clinic above to generate a QR Code";
+        instructions.innerHTML = `<span class="info-icon material-symbols-outlined">
+            info
+            </span>For mobile, generate then scan QR code. For web, please click on google reviews below.`
       } else {
         prompt.innerHTML =
           "Gracias por tomarse el tiempo para escribirnos una reseña, trabajamos duro para proporcionar la mejor atención de calidad para nuestros pacientes y deseamos seguir haciéndolo. Por favor, háganos saber cómo lo hicimos!";
@@ -49,6 +53,9 @@ const changeToSpanish = () => {
       quetion[2].innerHTML =
           "Seria muy util nombrar a su Físico o Ocupacional terapeuta en su reseña!";
         location.innerHTML = "Elija una clínica arriba para generar un código QR";
+        instructions.innerHTML = `<span class="info-icon material-symbols-outlined">
+            info
+            </span>Para dispositivos móviles, genere y luego escanee el código QR. Para la web, haga clic en las reseñas de Google a continuación.`
       }
     }, 300);
   };
