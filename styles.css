@@ -53,7 +53,18 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-top: 10px;
+}
+
+.instructions {
     padding-top: 15px;
+    font-size: 15px;
+    color: #00538C;
+    font-weight: bold;
+}
+
+.info-icon {
+    color: black;
 }
 
 .container {
@@ -66,6 +77,7 @@
     border-right-width: 2px;
     border-right-color: black;
     padding: 15px;
+    overflow: hidden;
 }
 
 .clinic, .Qr-space {

@@ -73,11 +73,9 @@ const onClick = () => {
   setTimeout(() => {
     hideSpinner();
     googleOverview.innerHTML = `
-    <h2 class="google-title">What others are saying about our Upper Eastside clinic<span class="material-symbols-outlined">
-          info
-          </span></h2>
+    <h2 class="google-title">What others are saying about our Upper Eastside clinic</h2>
         <gmpx-api-loader key="AIzaSyC5-9bgZEZiMQuc5BNlAzsmS8U9LlormuA" solution-channel="GMP_GCC_placeoverview_v1_xl"></gmpx-api-loader>
-        <a href="https://www.google.com/search?q=prohealth+and+fitness+pt+ot+1041+3rd+avenue+reviews&oq=prohealth+and+fit&aqs=chrome.0.35i39j35i39i650j69i57j46i175i199i512l2j0i22i30j0i10i22i30j0i22i30l3.16039j0j15&sourceid=chrome&ie=UTF-8#lrd=0x89c2593703743a97:0x2ffc04ab2427067d,1,,,,">
+        <a href="https://www.google.com/search?q=prohealth+and+fitness+pt+ot+1041+3rd+avenue+reviews&oq=prohealth+and+fit&aqs=chrome.0.35i39j35i39i650j69i57j46i175i199i512l2j0i22i30j0i10i22i30j0i22i30l3.16039j0j15&sourceid=chrome&ie=UTF-8#lrd=0x89c2593703743a97:0x2ffc04ab2427067d,1,,,," target="_blank">
           <div class="googleOverview col-3">
           <gmpx-place-overview place="ChIJlzp0AzdZwokRfQYnJKsE_C8">
             <gmpx-place-directions-button slot="action">
@@ -124,11 +122,9 @@ const onClick1 = () => {
   setTimeout(() => {
     hideSpinner();
     googleOverview.innerHTML = `
-    <h2 class="google-title">What others are saying about our Westside clinic <span class="material-symbols-outlined">
-          info
-          </span></h2>
+    <h2 class="google-title">What others are saying about our Westside clinic</h2>
 <gmpx-api-loader key="AIzaSyC5-9bgZEZiMQuc5BNlAzsmS8U9LlormuA" solution-channel="GMP_GCC_placeoverview_v1_xl"></gmpx-api-loader>
- <a href="https://www.google.com/search?q=Pro-Health+%26+Fitness+Office+&sxsrf=APwXEdc8MkBYsK_m6Jcb-bjfx-IMWUZY0g%3A1687637485401&ei=7U2XZMyCGIGe5NoPoPiFiA4&ved=0ahUKEwiMrc7G29z_AhUBD1kFHSB8AeEQ4dUDCBA&uact=5&oq=Pro-Health+%26+Fitness+Office+&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzICCCY6CggAEEcQ1gQQsANKBAhBGABQzwlY_xFgsBpoAXABeACAAUSIAZIDkgEBN5gBAKABAcABAcgBBQ&sclient=gws-wiz-serp#lrd=0x89c259889ea622e9:0x8b626c61e7ec52f2,1,,,,"> 
+ <a href="https://www.google.com/search?q=Pro-Health+%26+Fitness+Office+&sxsrf=APwXEdc8MkBYsK_m6Jcb-bjfx-IMWUZY0g%3A1687637485401&ei=7U2XZMyCGIGe5NoPoPiFiA4&ved=0ahUKEwiMrc7G29z_AhUBD1kFHSB8AeEQ4dUDCBA&uact=5&oq=Pro-Health+%26+Fitness+Office+&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzICCCY6CggAEEcQ1gQQsANKBAhBGABQzwlY_xFgsBpoAXABeACAAUSIAZIDkgEBN5gBAKABAcABAcgBBQ&sclient=gws-wiz-serp#lrd=0x89c259889ea622e9:0x8b626c61e7ec52f2,1,,,," target="_blank"> 
 <div class="googleOverview col-3">
   <gmpx-place-overview place="ChIJ6SKmnohZwokR8lLs52FsYos">
     <gmpx-place-directions-button slot="action">
@@ -179,11 +175,9 @@ const onClick2 = () => {
   setTimeout(() => {
     hideSpinner();
     googleOverview.innerHTML = 
-    `<h2 class="google-title">What others are saying about our Upper Westside clinic<span class="material-symbols-outlined">
-          info
-          </span></h2>
+    `<h2 class="google-title">What others are saying about our Upper Westside clinic</h2>
         <gmpx-api-loader key="AIzaSyC5-9bgZEZiMQuc5BNlAzsmS8U9LlormuA" solution-channel="GMP_GCC_placeoverview_v1_xl"></gmpx-api-loader>
-        <a href="https://www.google.com/search?q=prohealth+and+fitness+pt+ot+westend+180+reviews&sxsrf=APwXEdc5_ahyNMlu_DTEXUL8HpbT1-dzPA%3A1687636955848&ei=20uXZKmYM9yl5NoP6faceA&ved=0ahUKEwjp8YzK2dz_AhXcElkFHWk7Bw8Q4dUDCBA&uact=5&oq=prohealth+and+fitness+pt+ot+westend+180+reviews&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCCEQqwI6CwgAEIkFEKIEELADOggIABCiBBCwA0oECEEYAVDpA1jpA2CYDWgBcAB4AIAB-QaIAfkGkgEDNi0xmAEAoAEBwAEByAEE&sclient=gws-wiz-serp#lrd=0x89c2586053de2a13:0xd9035cbeef4b6b48,1,,,,">    
+        <a href="https://www.google.com/search?q=prohealth+and+fitness+pt+ot+westend+180+reviews&sxsrf=APwXEdc5_ahyNMlu_DTEXUL8HpbT1-dzPA%3A1687636955848&ei=20uXZKmYM9yl5NoP6faceA&ved=0ahUKEwjp8YzK2dz_AhXcElkFHWk7Bw8Q4dUDCBA&uact=5&oq=prohealth+and+fitness+pt+ot+westend+180+reviews&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCCEQqwI6CwgAEIkFEKIEELADOggIABCiBBCwA0oECEEYAVDpA1jpA2CYDWgBcAB4AIAB-QaIAfkGkgEDNi0xmAEAoAEBwAEByAEE&sclient=gws-wiz-serp#lrd=0x89c2586053de2a13:0xd9035cbeef4b6b48,1,,,," target="_blank">    
         <div class="googleOverview col-3">
                 <gmpx-place-overview place="ChIJEyreU2BYwokRSGtL775cA9k">
                      <gmpx-place-directions-button slot="action">
