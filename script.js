@@ -206,7 +206,7 @@ const onClick2 = () => {
           <div class="provider-container">
           <figure class="provider-card">
             <img class="provider-img" src="https://prohealthptot.com/wp-content/uploads/2023/03/Colin-McGowan-Pic-PT-DPT-CertMDT-02-480x480.jpg" alt="PT-provider-Upper-Eastside-clinic" />
-           <figcaption class="provider-name">Colin McGowan<span class="provider-credentials">PT, DPT, cert. MDT</span></figcaption>
+           <figcaption class="provider-name">Colin McGowan <span class="provider-credentials">PT, DPT, cert. MDT</span></figcaption>
           </figure>
           </div>`;
     location.innerHTML = "Scan here for Upper Westside clinic";

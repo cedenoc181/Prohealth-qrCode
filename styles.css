@@ -39,6 +39,7 @@
     margin-left: 45%;
     padding-top: 20%;
 }
+
 .nav{
     margin-top: 20px;
 }
@@ -192,13 +193,12 @@
 
 
 
-
-
-
-
-
-
 @media only screen and (max-width: 1050px) {
+
+   .welcome {
+    font-size: 25px;
+    }
+
     #language {
         margin-left: 15px; 
         margin-right: 15px;
@@ -209,7 +209,16 @@
     }
 
     #questions li {
-        padding-top: 3%;
+        padding-top: 2%;
+        font-size: 17px;
+    }
+
+    .clinic {
+        padding: 10px;
+    }
+    .instructions {
+        text-align: center;
+        padding: 4px;
     }
 
      #questions li:nth-of-type(3) {
@@ -222,17 +231,19 @@
         }
 
         #qrcode {
-            font-size: x-large;
-            width: 400px;
-            height: 350px;
-            padding: 20px 0px 20px 0px;
+            font-size: 25px;
+            width: 275px;
+            height: 275px;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 75px;
-            margin-top: 35px;
+            margin-top: 15px;
         }
 
+        .provider-img {
+            width: 305px;
+            height: 300px;
+        }
         .nav {
             margin-top: 20px;
         }
