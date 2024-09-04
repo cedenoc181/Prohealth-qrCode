@@ -281,6 +281,11 @@
     .googleOverview {
         height: 360px;
     } 
+
+    .provider-img {
+        width: 275px;
+        height: 275px;
+    } 
 }
 
 /* Ipad air  */
