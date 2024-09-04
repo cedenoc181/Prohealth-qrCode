@@ -9,19 +9,16 @@ const googleMaps = document.getElementById("map");
 const providersList = document.getElementById("providers");
 const instructions = document.querySelector(".instructions");
 
-
-
-
-
-const changeToSpanish = () => {
-    const isSpanish = language.innerHTML === "language_spanish";
-    language.innerHTML = isSpanish ? "language_us" : "language_spanish";
-  
+const changeLanguage = () => {
+  const isSpanish = language.innerHTML === "language_spanish";
+  language.innerHTML = isSpanish ? "language_us" : "language_spanish";
     let location = document.getElementById("location");
-    qrDisplay.innerHTML = "";
     location.innerHTML = "";
+    qrDisplay.innerHTML = "";
     instructions.innerHTML = "";
-  
+
+  // nest if else statements to get desired outcome!!!
+
     setTimeout(() => {
       if (isSpanish) {
         prompt.innerHTML =
@@ -35,10 +32,7 @@ const changeToSpanish = () => {
         quetion[2].innerHTML =
           "It would be extremely helpful to name your Physical or Occupational therapist in your feedback!";
         location.innerHTML = "Select a clinic above to generate a QR Code";
-        instructions.innerHTML = `<span class="info-icon material-symbols-outlined">
-            info
-            </span>For mobile, generate then scan QR code. For web, please click on google reviews below.`
-      } else {
+       } else {
         prompt.innerHTML =
           "Gracias por tomarse el tiempo para escribirnos una reseña, trabajamos duro para proporcionar la mejor atención de calidad para nuestros pacientes y deseamos seguir haciéndolo. Por favor, háganos saber cómo lo hicimos!";
         
@@ -53,10 +47,7 @@ const changeToSpanish = () => {
       quetion[2].innerHTML =
           "Seria muy util nombrar a su Físico o Ocupacional terapeuta en su reseña!";
         location.innerHTML = "Elija una clínica arriba para generar un código QR";
-        instructions.innerHTML = `<span class="info-icon material-symbols-outlined">
-            info
-            </span>Para dispositivos móviles, genere y luego escanee el código QR. Para la web, haga clic en las reseñas de Google a continuación.`
-      }
+       }
     }, 300);
   };
   
@@ -69,6 +60,7 @@ const hideSpinner = () => {
 };
 
 const onClick = () => {
+  const isSpanish = language.innerHTML === "language_spanish";
   let location = document.getElementById("location");
   qrDisplay.innerHTML = "";
   location.innerHTML = "";
@@ -111,12 +103,18 @@ const onClick = () => {
             <figcaption class="provider-name">Alexandra Burdo <span class="provider-credentials">MS, OTR/L, </br> Occupational Therapy Supervisor</span></figcaption>
           </figure>
         </div>`;
-    location.innerHTML = "Scan here for Upper Eastside clinic";
+        instructions.innerHTML = isSpanish ?  `<span class="info-icon material-symbols-outlined">
+        info
+        </span>Para dispositivos móviles, genere y luego escanee el código QR. Para la web, haga clic en las reseñas de Google a continuación.`:`<span class="info-icon material-symbols-outlined">
+        info
+        </span>For mobile, generate then scan QR code. For web, please click on google reviews below.`;
+        location.innerHTML =  isSpanish ? "Escanee aquí para la clínica Upper Eastside" : "Scan here for Upper Eastside clinic";
     qrDisplay = generateQRCode(east);
   }, 1000);
 };
 
 const onClick1 = () => {
+  const isSpanish = language.innerHTML === "language_spanish";
   let location = document.getElementById("location");
   qrDisplay.innerHTML = "";
   location.innerHTML = "";
@@ -164,12 +162,19 @@ googleMaps.innerHTML = `<iframe
             <figcaption class="provider-name">Alexandra Burdo <span class="provider-credentials">MS, OTR/L,</br> Occupational Therapy Supervisor</span></figcaption>
           </figure>
         </div>`;
-    location.innerHTML = "Scan here for Westside clinic";
+        instructions.innerHTML = isSpanish ?  `<span class="info-icon material-symbols-outlined">
+        info
+        </span>Para dispositivos móviles, genere y luego escanee el código QR. Para la web, haga clic en las reseñas de Google a continuación.`:`<span class="info-icon material-symbols-outlined">
+        info
+        </span>For mobile, generate then scan QR code. For web, please click on google reviews below.`;
+        location.innerHTML =  isSpanish ? "Escanee aquí para la clínica westside" : "Scan here for Westside clinic";
+
     qrDisplay = generateQRCode(w150);
   }, 1000);
 };
 
 const onClick2 = () => {
+  const isSpanish = language.innerHTML === "language_spanish";
   let location = document.getElementById("location");
   qrDisplay.innerHTML = "";
   location.innerHTML = "";
@@ -209,30 +214,20 @@ const onClick2 = () => {
            <figcaption class="provider-name">Colin McGowan <span class="provider-credentials">PT, DPT, cert. MDT</span></figcaption>
           </figure>
           </div>`;
-    location.innerHTML = "Scan here for Upper Westside clinic";
+          instructions.innerHTML = isSpanish ?  `<span class="info-icon material-symbols-outlined">
+          info
+          </span>Para dispositivos móviles, genere y luego escanee el código QR. Para la web, haga clic en las reseñas de Google a continuación.`:`<span class="info-icon material-symbols-outlined">
+          info
+          </span>For mobile, generate then scan QR code. For web, please click on google reviews below.`;
+          location.innerHTML =  isSpanish ? "Escanee aquí para la clínica Upper westside" : "Scan here for Upper Westside clinic";
     qrDisplay = generateQRCode(w180);
   }, 1000);
 };
 
-// const onClick3 = () => {
-//   let location = document.getElementById("location");
-//   qrDisplay.innerHTML = "";
-//   location.innerHTML = "";
-//   let inw =
-//     "https://www.google.com/search?q=prohealth+and+fitness+pt+ot+inwood+reviews&sxsrf=APwXEdd0AgBUSl14kxP8zQq13i_Co6YqdA%3A1687636961050&ei=4UuXZNXfAuibptQP196XWA&ved=0ahUKEwiV1MrM2dz_AhXojYkEHVfvBQsQ4dUDCBA&uact=5&oq=prohealth+and+fitness+pt+ot+inwood+reviews&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzoKCAAQRxDWBBCwAzoGCAAQBxAeOggIABCKBRCGAzoICAAQiQUQogQ6BQgAEKIEOgcIIxCwAhAnSgQIQRgAUMIcWKkwYMUxaAJwAXgAgAFtiAG3BJIBAzYuMZgBAKABAcABAcgBBA&sclient=gws-wiz-serp";
-//   showSpinner();
-//   setTimeout(() => {
-//     hideSpinner();
-//     location.innerHTML = "Pro Health and Fitness Inwood clinic";
-//     qrDisplay = generateQRCode(inw);
-//   }, 1000);
-// };
-
 nav[0].onclick = onClick;
 nav[1].onclick = onClick1;
 nav[2].onclick = onClick2;
-// nav[3].onclick = onClick3; //inwood location out of business
-language.onclick = changeToSpanish;
+language.onclick = changeLanguage;
 
 hideSpinner();
 const generateQRCode = (url) => {
@@ -243,12 +238,3 @@ const generateQRCode = (url) => {
   });
 };
 
-
-// const placeIds = [
-//     "ChIJlzp0AzdZwokRfQYnJKsE_C8", 
-//     "ChIJ6SKmnohZwokR8lLs52FsYos", 
-//     "ChIJEyreU2BYwokRSGtL775cA9k"
-// ];
-
-
-// Pro-Health+&+Fitness+Office, New+York+NY
