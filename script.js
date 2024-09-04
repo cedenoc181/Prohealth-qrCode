@@ -4,10 +4,15 @@ const prompt = document.getElementById("prompt");
 const quetion = document.querySelectorAll("li");
 const language = document.getElementById("language-icon");
 const qrDisplay = document.getElementById("qrcode");
-const googleOverview = document.querySelector(".google-container");
+const googleOverview = document.querySelector(".google-overview-link");
 const googleMaps = document.getElementById("map");
 const providersList = document.getElementById("providers");
 const instructions = document.querySelector(".instructions");
+const googleTitle = document.querySelector(".google-title");
+
+
+
+
 
 const changeLanguage = () => {
   const isSpanish = language.innerHTML === "language_spanish";
@@ -16,7 +21,8 @@ const changeLanguage = () => {
     location.innerHTML = "";
     qrDisplay.innerHTML = "";
     instructions.innerHTML = "";
-
+    googleTitle.innerText = "";
+    googleTitle.innerText = isSpanish ? "Scan here for Upper Eastside clinic" : "Escanee aquí para la clínica Upper Eastside";
   // nest if else statements to get desired outcome!!!
 
     setTimeout(() => {
@@ -66,15 +72,15 @@ const onClick = () => {
   location.innerHTML = "";
   googleOverview.innerHTML = "";
   googleMaps.innerHTML = "";
+  googleTitle.innerText = "";
   let east =
     "https://www.google.com/search?q=prohealth+and+fitness+pt+ot+1041+3rd+avenue+reviews&oq=prohealth+and+fit&aqs=chrome.0.35i39j35i39i650j69i57j46i175i199i512l2j0i22i30j0i10i22i30j0i22i30l3.16039j0j15&sourceid=chrome&ie=UTF-8";
   showSpinner();
   setTimeout(() => {
     hideSpinner();
+    googleTitle.innerText = isSpanish ?  "Escanee aquí para la clínica Upper Eastside": "Scan here for Upper Eastside clinic";
     googleOverview.innerHTML = `
-    <h2 class="google-title">What others are saying about our Upper Eastside clinic</h2>
-        <gmpx-api-loader key="AIzaSyC5-9bgZEZiMQuc5BNlAzsmS8U9LlormuA" solution-channel="GMP_GCC_placeoverview_v1_xl"></gmpx-api-loader>
-        <a href="https://www.google.com/search?q=prohealth+and+fitness+pt+ot+1041+3rd+avenue+reviews&oq=prohealth+and+fit&aqs=chrome.0.35i39j35i39i650j69i57j46i175i199i512l2j0i22i30j0i10i22i30j0i22i30l3.16039j0j15&sourceid=chrome&ie=UTF-8#lrd=0x89c2593703743a97:0x2ffc04ab2427067d,1,,,," target="_blank">
+        <a class="google-overview-link" href="https://www.google.com/search?q=prohealth+and+fitness+pt+ot+1041+3rd+avenue+reviews&oq=prohealth+and+fit&aqs=chrome.0.35i39j35i39i650j69i57j46i175i199i512l2j0i22i30j0i10i22i30j0i22i30l3.16039j0j15&sourceid=chrome&ie=UTF-8#lrd=0x89c2593703743a97:0x2ffc04ab2427067d,1,,,," target="_blank">
           <div class="googleOverview col-3">
           <gmpx-place-overview place="ChIJlzp0AzdZwokRfQYnJKsE_C8">
             <gmpx-place-directions-button slot="action">
@@ -108,7 +114,7 @@ const onClick = () => {
         </span>Para dispositivos móviles, genere y luego escanee el código QR. Para la web, haga clic en las reseñas de Google a continuación.`:`<span class="info-icon material-symbols-outlined">
         info
         </span>For mobile, generate then scan QR code. For web, please click on google reviews below.`;
-        location.innerHTML =  isSpanish ? "Escanee aquí para la clínica Upper Eastside" : "Scan here for Upper Eastside clinic";
+        location.innerText =  isSpanish ? "Escanee aquí para la clínica Upper Eastside" : "Scan here for Upper Eastside clinic";
     qrDisplay = generateQRCode(east);
   }, 1000);
 };
@@ -126,6 +132,7 @@ const onClick1 = () => {
   showSpinner();
   setTimeout(() => {
     hideSpinner();
+    googleTitle.innerText = isSpanish ? "Scan here for Westside clinic" : "Escanee aquí para la clínica Westside";
     googleOverview.innerHTML = `
     <h2 class="google-title">What others are saying about our Westside clinic</h2>
 <gmpx-api-loader key="AIzaSyC5-9bgZEZiMQuc5BNlAzsmS8U9LlormuA" solution-channel="GMP_GCC_placeoverview_v1_xl"></gmpx-api-loader>
@@ -167,7 +174,7 @@ googleMaps.innerHTML = `<iframe
         </span>Para dispositivos móviles, genere y luego escanee el código QR. Para la web, haga clic en las reseñas de Google a continuación.`:`<span class="info-icon material-symbols-outlined">
         info
         </span>For mobile, generate then scan QR code. For web, please click on google reviews below.`;
-        location.innerHTML =  isSpanish ? "Escanee aquí para la clínica westside" : "Scan here for Westside clinic";
+        location.innerText =  isSpanish ? "Escanee aquí para la clínica westside" : "Scan here for Westside clinic";
 
     qrDisplay = generateQRCode(w150);
   }, 1000);
@@ -186,6 +193,7 @@ const onClick2 = () => {
   showSpinner();
   setTimeout(() => {
     hideSpinner();
+    googleTitle.innerHTML = isSpanish ? "Scan here for Upper Westside clinic" : "Escanee aquí para la clínica Upper Westside";
     googleOverview.innerHTML = 
     `<h2 class="google-title">What others are saying about our Upper Westside clinic</h2>
         <gmpx-api-loader key="AIzaSyC5-9bgZEZiMQuc5BNlAzsmS8U9LlormuA" solution-channel="GMP_GCC_placeoverview_v1_xl"></gmpx-api-loader>
