@@ -112,7 +112,7 @@
     border: solid 3px #00538C;
     border-radius: 1%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    margin-left: 10%;
+    margin: auto;
     margin-bottom: 5%;
     height: 400px;
     overflow-y: scroll;
@@ -266,6 +266,21 @@
         margin-left: 35px;
         margin-right: 35px;
        }
+
+       #qrcode {
+        font-size: 25px;
+        width: 250px;
+        height: 250px;
+        margin-top: 15px;
+    }
+
+    #location {
+        padding-top: 15px;
+    }
+
+    .googleOverview {
+        height: 360px;
+    } 
 }
 
 /* Ipad air  */
