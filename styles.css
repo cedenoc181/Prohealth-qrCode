@@ -620,3 +620,26 @@
         height: 145px;
     }
  }
+
+ @media only screen and (max-width: 400px) {
+
+    .nav {
+        font-size: 13px !important;
+    }
+
+    #language {
+        padding-bottom: 20px;
+    }
+
+    #prompt {
+        font-size: 15px;
+    }
+
+    .google-title, .provider-title {
+        font-size: 17px;
+    }
+
+    .g-maps {
+        height: 160px !important;
+    }
+ }
