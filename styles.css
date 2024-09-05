@@ -445,4 +445,67 @@
         height: 230px;
     }
 }
+ /*  Surface duo  */
 
+ @media only screen and (max-width: 540px) {
+    .container {
+        display: block;
+    }
+    header {
+    margin-bottom: 20px !important;
+    }
+    .clinic {
+        width: 100%;
+        border-right-style: none;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-bottom-color: black;
+        padding: 15px q5px 15px 15px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .Qr-space {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .instructions {
+        padding: 0px 15px 0px 15px;
+    }
+
+    #questions li:nth-child(-n+2){
+        width: 100%;
+        margin: auto;
+    }
+    #questions li {
+        font-size: 16px;
+        padding-top: 15px;
+    }
+
+    #prompt {
+        font-size: 18px;
+        padding-top: 15px;
+    }
+
+    .google-title {
+        font-size: 18px;
+        padding: 0px 10px;
+    }
+
+    .provider-title {
+        font-size: 22px;
+    }
+    .g-maps {
+        height: 200px !important;
+    }
+
+    .provider-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .provider-credentials, .provider-name {
+        font-size: 10px;
+    }
+ }
