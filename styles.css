@@ -523,7 +523,15 @@
     }
     
     .hours-list, .contact-list, .location-list {
-        font-size: 14px;
+        font-size: 14px !important;
     }
     
+    .footer {
+        padding: 3px;
+        height: 175px;
+    }
+
+    .footer-container {
+        padding: 10px;
+    }
  }
