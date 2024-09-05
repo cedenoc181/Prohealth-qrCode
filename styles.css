@@ -535,3 +535,88 @@
         padding: 10px;
     }
  }
+
+ @media only screen and (max-width: 430px) {
+    header {
+        margin-bottom: 10px !important;
+        }
+    
+    #prompt {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+
+    #questions li {
+        font-size: 15px;
+        padding-top: 12px;
+    }
+
+    .nav {
+        text-align: center;
+        font-size: 14px;
+        width: 33%;
+    }
+
+
+    .nav-logo {
+        margin-top: 15px;
+        margin-left: 15px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .googleOverview {
+        height: 250px;
+        margin-bottom: 30px;
+    }
+
+    .provider-container {
+       display: block;
+    }
+
+    .provider-card {
+        display: flex;
+        align-items: center;
+        margin-left: 12%;
+        padding-top: 13px;
+    }
+
+    .provider-card:nth-child(2) {
+        margin-left: 26%;
+    }
+
+    .provider-card:nth-child(3) {
+        margin-left: 44%;
+    }
+
+    .provider-img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .provider-credentials, .provider-name {
+        font-size: 8px;
+        padding-left: 5px;
+    }
+
+    .g-maps {
+        height: 180px !important;
+    }
+
+    .contact-title, .location-title, .hours-title{
+        font-size: 17px;
+    }
+
+    .hours-list, .contact-list, .location-list {
+        font-size: 12px !important;
+    }
+
+    .hours-list li:nth-child(3) {
+        color: transparent;
+        font-size: 0px;
+    }
+
+    .footer {
+        height: 145px;
+    }
+ }
