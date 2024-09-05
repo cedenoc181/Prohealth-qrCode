@@ -493,6 +493,16 @@
         padding: 0px 10px;
     }
 
+    .googleOverview {
+        height: 300px;
+        width: 90%;
+
+    }
+
+    .provider-container {
+        padding-bottom: 15px;
+    }
+
     .provider-title {
         font-size: 22px;
     }
@@ -508,4 +518,12 @@
     .provider-credentials, .provider-name {
         font-size: 10px;
     }
+    .contact-title, .location-title, .hours-title{
+        font-size: 20px;
+    }
+    
+    .hours-list, .contact-list, .location-list {
+        font-size: 14px;
+    }
+    
  }
